@@ -1,0 +1,42 @@
+README para o Projeto de API de Usuários
+
+Este projeto é uma API RESTful desenvolvida com FastAPI para gerenciar informações 
+de usuários. Ele fornece operações CRUD (Create, Read, Update, Delete) para interagir com os
+dados dos usuários, incluindo detalhes como nome completo, CPF, endereço, data de
+nascimento, estado civil, e informações sobre se o usuário é desenvolvedor ou jogador, 
+além de suas senioridades nessas áreas.
+
+Instalação
+1. Certifique-se de ter Python 3.7 ou superior instalado.
+2. Instale o FastAPI e Uvicorn (servidor ASGI) com pip:
+(pip install fastapi uvicorn)
+
+Executando
+Para executar a aplicação, navegue até o diretório raiz do projeto e execute o seguinte comando:
+(uvicorn main:app --reload)
+Isso iniciará o servidor de desenvolvimento na porta 8000. 
+A opção --reloadhabilita o carregamento automático do servidor quando arquivos são modificados.
+
+Rotas Disponíveis
+ *GET /usuario/{id_usuario} : Retorna os detalhes de um usuário específico pelo ID.
+ *PUT /usuário/{id} : Atualiza os detalhes de um usuário específico pelo ID.
+ *POST /usuário : Crie um novo usuário.
+ *DELETE /usuario/{id} : Exclui um usuário específico pelo ID.
+
+ Documento
+A documentação interativa da API está disponível http://localhost:8000/docsapós iniciar a aplicação. 
+Você pode usar a documentação para testar as rotas e entender melhor a API.
+
+Referencias:
+
+        Youtube
+https://www.youtube.com/watch?v=R26iojTwUv8&t=198s
+https://www.youtube.com/watch?v=XN12auMkKtc&t=326s
+https://www.youtube.com/watch?v=FBLAV1SbJFk&t=2s
+
+        Documentação
+https://fastapi.tiangolo.com/tutorial/sql-databases/
+
+        GitHub
+https://github.com/Jhonatan-de-Souza/como_criar_uma_api_devaprender
+https://github.com/Pythonando       
